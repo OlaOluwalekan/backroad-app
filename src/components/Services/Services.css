@@ -1,0 +1,58 @@
+.services {
+  background-color: aliceblue;
+  padding: 80px 0;
+}
+
+.service-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 30px 0;
+}
+
+.single-service span {
+  width: 60px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  background-color: turquoise;
+  color: #363636;
+}
+
+.single-service .service-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.service-details .service-name {
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.service-details .service-text {
+  font-size: 14px;
+  color: gray;
+  line-height: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
